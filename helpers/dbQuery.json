@@ -1,0 +1,10 @@
+{
+  "Customers":{
+    "addAmount": "INSERT INTO Customers (Amount, Date) VALUES (%L, %L);",
+    "customerDetails": "SELECT * FROM Customers",
+    "viewTotalCollection": "SELECT * FROM Customers WHERE FullName LIKE %L AND Date LIKE %L",
+    "signup": "INSERT INTO userCredential (username, email, password_hash) VALUES (%L, %L, %L)",
+    "signupDetail": "SELECT * FROM userCredential WHERE username = %L OR email = %L",
+    "signin": "SELECT * FROM userCredential WHERE email = %L"
+  }
+}

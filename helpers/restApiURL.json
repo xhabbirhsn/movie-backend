@@ -1,0 +1,42 @@
+{
+
+  "accessToken": {
+
+    "url": "https://login.microsoftonline.com/%s/oauth2/token",
+
+    "method": "POST",
+
+    "resource_url": {
+
+      "managementAPI": {
+
+        "url": "https://management.azure.com"
+
+      },
+
+      "graphAPI": {
+
+        "url": "https://graph.microsoft.com"
+
+      }}},
+    "tickets": {
+      "ZohoData": {
+        "url": "https://celebal-zoho-dgapi.azurewebsites.net/data",
+        "method": "POST"
+      }
+    },
+    "mentor":{
+      "menteeList":{
+        "url":"https://hrmsctapi.azurewebsites.net/api/alldirectreportingtoemailid?email=%s",
+        "method": "GET"
+      },
+      "employeeList":{
+        "url":"https://graph.microsoft.com/v1.0/users?$select=displayName,jobTitle,mail,id,officeLocation,mobilePhone,department&$filter=startswith(mail,'%s')",
+        "method":"GET"
+      }
+    },
+    "home":{
+      "profilePic":"https://graph.microsoft.com/v1.0/me",
+      "method":"GET"
+    }
+}
