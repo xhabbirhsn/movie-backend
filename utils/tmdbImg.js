@@ -5,7 +5,7 @@ async function tmdbImg(imgId) {
         try {
             const options = {
                 method: 'GET',
-                url: `https://api.themoviedb.org/3/movie/${imgId}/images?include_image_language=en`,
+                url: `https://api.themoviedb.org/3/movie/${imgId}?language=en-US`,
                 headers: {
                     accept: 'application/json',
                     Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJiYTExMWU1YjBiNDYzY2Q2OWY0OTYxZWMxYTEzOWI3YyIsIm5iZiI6MTcyNDYwODk1My40NTcwMjIsInN1YiI6IjY2YjRhNmYwYWY5YWVlMDE4MjI0MTdkMSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.d5O9NYr0UrPXh7tqy4j8bXvOsWAKqzlfhgzG95CHv2w'
